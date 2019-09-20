@@ -25,7 +25,9 @@ function draw() {
   for (i = 0; i < a; i += 2) {
     line(r, 0, cos(i)*r, sin(i)*r);
   }
-  arc(0, 0, r*2, r*2, 0, a-2)
+  if (a > 2) {
+    arc(0, 0, r*2, r*2, 0, a-2)
+  }
   pop();
 
   // Surrounding circles
